@@ -1,0 +1,602 @@
+/* U.css */
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+}
+
+/* Header Styles */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+/* Navigation Bar Styles */
+.navbar {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #444;
+}
+
+.nav-link {
+    color: #fff;
+    display: block;
+    padding: 15px 20px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.nav-link:hover {
+    background-color: #575757;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    width: 150px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-menu .dropdown-link {
+    padding: 10px 15px;
+}
+
+.dropdown-menu .dropdown-link:hover {
+    background-color: #575757;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+/* Registration Form Styles */
+.registration-form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    margin: 20px auto;
+    width: 300px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.input-field {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.submit-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.submit-button:hover {
+    background-color: #575757;
+}
+/* 全局样式 */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* 页眉和页脚样式 */
+header, footer {
+  text-align: center; /* 内容居中对齐 */
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 1em;
+}
+
+/* 购物车容器样式 */
+.cart-container {
+  flex: 1;
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* 购物车商品样式 */
+.cart-items {
+  background-color: #f2f2f2;
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+/* 购物车表头和表格数据样式 */
+.cart-items th, .cart-items td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: left;
+}
+
+.cart-items th {
+  background-color: #77c9ed;
+  color: white;
+}
+
+/* 奇数行背景颜色 */
+.cart-items tbody tr:nth-child(odd) {
+  background-color: #f9f9f9;
+}
+
+/* 按钮样式 */
+.button {
+  background-color: #7ec8f0;
+  border: none;
+  color: white;
+  padding: 12px 24px;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+/* 购物车样式 */
+.shopping-cart {
+  margin-top: 20px;
+}
+
+/* 总计样式 */
+.total {
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+/* 购物车表格单元格样式 */
+.shopping-cart table td {
+  padding-right: 20px;
+}
+
+/* 页脚样式 */
+footer {
+  flex-shrink: 0;
+}
+
+/* 导航菜单样式 */
+nav ul {
+list-style: none;
+padding: 0;
+margin: 0;
+}
+
+nav ul li {
+display: inline-block;
+position: relative;
+}
+
+nav ul li a {
+display: block;
+padding: 10px 20px;
+text-decoration: none;
+color: #333;
+}
+
+/* 下拉菜单样式 */
+.dropdown-menu {
+display: none;
+position: absolute;
+background-color: #fff;
+box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.dropdown-menu li {
+display: block;
+}
+
+/* 鼠标悬停显示下拉菜单 */
+.dropdown:hover .dropdown-menu {
+display: block;
+}
+
+/* 注册表单样式 */
+.registration-form {
+  max-width: 300px;
+  margin: 2em auto;
+  padding: 2em;
+  background: #f5f5f5;
+  border: 1px solid #e7e7e7;
+  text-align: center;
+}
+
+/* 注册表单标题样式 */
+.registration-form h2 {
+  margin-bottom: 1em;
+}
+
+/* 表单布局样式 */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* 文本输入框样式 */
+input[type="text"] {
+  padding: 0.5em;
+  margin-bottom: 1em;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+/* 按钮样式 */
+button {
+  background-color: #72d4e1;
+  color: white;
+  border: none;
+  padding: 0.5em;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* 鼠标悬停按钮样式 */
+button:hover {
+  background-color: #57d8dc;
+}
+
+/* 主体样式 */
+main {
+  padding: 2em;
+}
+
+/* 各种内容区域样式 */
+.search-section, .instructor-callout, .learn-daily {
+  margin-bottom: 2em;
+  padding: 1em;
+  background: #f5f5f5;
+  border: 1px solid #e7e7e7;
+}
+
+/* 课程样式 */
+.course {
+  background-color: #f7f7f7;
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin: 0 10px; /* Add spacing between courses */
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  text-align: center;
+}
+
+/* 课程首个元素样式 */
+.course:first-child {
+  margin-left: 0; /* Remove left margin for the first course */
+}
+
+/* 课程最后一个元素样式 */
+.course:last-child {
+  margin-right: 0; /* Remove right margin for the last course */
+}
+
+/* 课程标题样式 */
+.course h3 {
+  margin: 0;
+  padding-bottom: 5px;
+}
+
+/* 添加到购物车链接样式 */
+.add-to-cart {
+  background-color: #88c6ef;
+  color: white;
+  padding: 5px 10px;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 5px;
+}
+
+/* 鼠标悬停添加到购物车样式 */
+.add-to-cart:hover {
+  background-color: #a9d6f4;
+  cursor: pointer;
+}
+
+/* 容器样式 */
+.container {
+  display: flex;
+  justify-content: center; /* Center the courses container */
+  flex-wrap: nowrap; /* Ensure items stay on the same line */
+  padding: 0;
+}
+
+/* 关于我们部分样式 */
+.about-us {
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* 关于我们标题样式 */
+.about-us h2 {
+  color: #333;
+}
+
+/* 关于我们段落样式 */
+.about-us p {
+  max-width: 800px;
+  margin: auto;
+  padding: 1em;
+  line-height: 1.6;
+}
+
+/* 文章样式 */
+article {
+  margin-bottom: 2em;
+  padding: 1em;
+  background: #f5f5f5;
+  border: 1px solid #e7e7e7;
+}
+
+/* 文章标题样式 */
+article h3 {
+  color: #333;
+  margin-bottom: 0.5em;
+}
+
+/* 联系信息区域样式 */
+.contact-info {
+  text-align: center;
+  background-color: #e9ecef;
+}
+
+/* 文章内部段落样式 */
+article p {
+  line-height: 1.6;
+  color: #333;
+}
+
+/* 联系信息标题样式 */
+.contact-info h3 {
+  text-align: center;
+  color: #007bff;
+}
+
+/* 项目容器样式 */
+.projects-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+/* 单个项目样式 */
+.project {
+  flex: 1;
+  min-width: 300px;
+  max-width: 350px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 15px;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* 项目图片样式 */
+.project-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+/* 按钮样式 */
+.btn {
+  display: inline-block;
+  background-color: #81c4f1;
+  color: white;
+  padding: 10px 15px;
+  text-decoration: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* 鼠标悬停按钮样式 */
+.btn:hover {
+  background-color:
+}
+/* U.css */
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+}
+
+/* Header Styles */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Navigation Bar Styles */
+.navbar {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #444;
+}
+
+.nav-link {
+    color: #fff;
+    display: block;
+    padding: 15px 20px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.nav-link:hover {
+    background-color: #575757;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    width: 150px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-menu .dropdown-link {
+    padding: 10px 15px;
+}
+
+.dropdown-menu .dropdown-link:hover {
+    background-color: #575757;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+/* Main Section Styles */
+main {
+    padding: 20px;
+}
+
+.search-section, .instructor-callout, .learn-daily {
+    background-color: #fff;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Search Section Styles */
+.search-section h2 {
+    margin-bottom: 10px;
+}
+
+.search-section p {
+    margin-bottom: 20px;
+}
+
+/* Instructor Callout Styles */
+.instructor-callout h2 {
+    margin-bottom: 10px;
+}
+
+.instructor-callout p {
+    margin-bottom: 20px;
+}
+
+/* Learn Daily Styles */
+.learn-daily h2 {
+    margin-bottom: 10px;
+}
+
+.learn-daily p {
+    margin-bottom: 20px;
+}
+
+/* Input Field Styles */
+.input-field {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+/* Submit Button Styles */
+.submit-button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.submit-button:hover {
+    background-color: #575757;
+}
+
+/* Callout Button Styles */
+.callout-button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.callout-button:hover {
+    background-color: #575757;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+  .project {
+    max-width: 100%;
+  }
+} 
+
+/* 导航栏样式 */
+.navbar {  
+  display: flex;  
+  justify-content: space-between;  
+  align-items: center;   
+  background-color: #83bbe9;  
+  padding: 10px 0; 
+}  
+
+/* 导航链接样式 */
+.navbar a {  
+  color: #f2f2f2;  
+  text-decoration: none;  
+  padding: 10px 15px; 
+  transition: background-color 0.3s ease;  
+}  
+
+/* 鼠标悬停导航链接样式 */
+.navbar a:hover {  
+  background-color: #ddd;  
+  color: black;

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Enquiry Form - [RTO Name]</title>
+<link rel="stylesheet" href="U.css">
+<style>
+    body { font-family: Arial, sans-serif; }
+    .form-container { max-width: 600px; margin: auto; padding: 20px; }
+    .form-group { margin-bottom: 15px; }
+    label { display: block; margin-bottom: 5px; }
+    input[type="text"],
+    input[type="email"],
+    select { width: 100%; padding: 10px; margin-bottom: 10px; }
+    .error { color: red; }
+    button { padding: 10px 20px; cursor: pointer; }
+</style>
+<script>
+    // Add your JavaScript here for form validation
+    function validateForm() {
+        var hasError = false;
+        var errorMessages = "";
+
+        var name = document.forms["enquiryForm"]["name"].value;
+        if (name == "") {
+            hasError = true;
+            errorMessages += "Please enter your name.\n";
+        }
+
+        var email = document.forms["enquiryForm"]["email"].value;
+        if (email == "") {
+            hasError = true;
+            errorMessages += "Please enter your email.\n";
+        } else {
+            // Simple email validation regex
+            var emailPattern = /\S+@\S+\.\S+/;
+            if (!emailPattern.test(email)) {
+                hasError = true;
+                errorMessages += "Please enter a valid email address.\n";
+            }
+        }
+
+        // More validation checks can be added here for other fields
+
+        if (hasError) {
+            alert(errorMessages);
+            return false;
+        }
+        return true;
+    }
+</script>
+</head>
+<body>
+    <header>  
+        <h1>Enquiry Form</h1>
+    </header>  
+    <nav>
+        <ul>
+            <div class="navbar"> 
+            <li><a href="index.html">Home</a></li>
+            <li class="dropdown">
+            <a href="#">Project</a>
+            <ul class="dropdown-menu">
+                <li><a href="page2.html">Project 1</a></li>
+                <li><a href="page3.html">Project 2</a></li>
+            </ul>
+            </li>
+            <li><a href="page6.html">About</a></li>
+            <li><a href="page9.html">Courseware</a></li>
+            <li><a href="page8.html">Enquiry</a></li>
+        </ul>
+    </nav>
+<div class="form-container">
+    <h2>Course Registration Enquiry Form</h2>
+    <form name="enquiryForm" onsubmit="return validateForm()" method="post">
+        <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+            <label for="course">Course of Interest:</label>
+            <select id="course" name="course" required>
+                <option value="">--Please select a course--</option>
+                <!-- Populate with the list of available courses -->
+                <option value="course1">Web Development</option>
+                <option value="course2">Cybersecurity</option>
+                <option value="course3">Data Analysis</option>
+                <!-- Add more courses as needed -->
+            </select>
+        </div>
+        <!-- Add more fields as required -->
+        <div class="form-group">
+            <button type="submit">Submit Enquiry</button>
+        </div>
+    </form>
+</div>
+<footer>
+    <p>Copyright &copy; 2024 amiya All rights reserved.</p>
+</footer>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="U.css"> <!-- Link to style file -->
+</head>
+<body>
+    <header>
+        <h1>Shopping Website</h1>
+    </header>
+
+    <nav>
+        <ul class="navbar">
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li class="dropdown">
+                <a href="#" aria-expanded="false" aria-haspopup="true" class="nav-link">Projects</a>
+                <ul class="dropdown-menu" aria-hidden="true">
+                    <li><a href="page2.html" class="dropdown-link">Project 1</a></li>
+                    <li><a href="page3.html" class="dropdown-link">Project 2</a></li>
+                </ul>
+            </li>
+            <li><a href="page6.html" class="nav-link">About Us</a></li>
+            <li><a href="page9.html" class="nav-link">Courseware</a></li>
+            <li><a href="page8.html" class="nav-link">Enquiry</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="search-section">
+            <h2>Search Products</h2>
+            <p>Here you can search for products you are interested in.</p>
+            <form action="#" method="get">
+                <input type="text" id="search" name="search" placeholder="Search products..." class="input-field">
+                <button type="submit" class="submit-button">Search</button>
+            </form>
+        </section>
+
+        <section class="instructor-callout">
+            <h2>Join Our Shopping Guide Team</h2>
+            <p>If you have unique insights into shopping and wish to share them with others, welcome to join our shopping guide team!</p>
+            <button class="callout-button">Learn More</button>
+        </section>
+
+        <section class="learn-daily">
+            <h2>Daily Shopping Recommendations</h2>
+            <p>We handpick a few items for you each day to make your shopping more interesting.</p>
+            <button class="callout-button">View Recommendations</button>
+        </section>
+        <!-- Additional sections or content can go here -->
+    </main>
+
+    <div class="registration-form">
+        <h2>Register</h2>
+        <form action="#" method="post">
+            <input type="text" id="name" name="name" placeholder="Name" required aria-label="Name" class="input-field">
+            <button type="submit" class="submit-button">Register</button>
+        </form>
+    </div>
+
+    <footer>
+        <p>Copyright &copy; 2024 amiya All rights reserved.</p>
+    </footer>
+
+    <script src="document.js"></script>
+</body>
+</html>
